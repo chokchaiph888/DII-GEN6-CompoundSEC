@@ -2,6 +2,7 @@
 import javax.swing.*;
 import java.awt.*;
 
+
 class RegisterFrame extends JFrame {
     private JTextField usernameField;
     private JPasswordField passwordField;

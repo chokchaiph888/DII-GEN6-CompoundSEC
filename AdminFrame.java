@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
 
+// 6 ระบบจัดการบัตร Keycard ของ Admin
 class AdminFrame extends JFrame {
     private DefaultListModel<Booking> bookingListModel;
     private JList<Booking> bookingList;
@@ -41,12 +42,13 @@ class AdminFrame extends JFrame {
         JButton showHistoryButton = new JButton("Show History");
         JButton showKeycardButton = new JButton("Show Keycard");
 
-
+        // 6 Admin สามารถสร้างบัตรเข้าใช้งาน
         confirmButton.addActionListener(e -> confirmBooking());
         cancelButton.addActionListener(e -> cancelBooking());
         editButton.addActionListener(e -> editBooking());
         createCardButton.addActionListener(e -> createCard());
         showHistoryButton.addActionListener(e -> showHistory());
+        // 7 แสดงบัตร Keycard ของลูกค้า
         showKeycardButton.addActionListener(e -> showKeycard());
 
         historyTextArea = new JTextArea(10, 50);

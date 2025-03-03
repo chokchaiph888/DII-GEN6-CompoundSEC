@@ -10,6 +10,7 @@ public class HotelSystem {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new MainMenuFrame());
     }
+    // 2 การสร้าง Keycard ที่ใช้เข้าห้องและอิงตามเวลา
     public static String generateTimeBasedKeycard() {
         try {
             long currentTime = Instant.now().truncatedTo(ChronoUnit.MINUTES).getEpochSecond();

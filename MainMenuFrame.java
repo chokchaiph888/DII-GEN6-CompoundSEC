@@ -2,7 +2,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-
+// 1 ระบบเมนูหลักของโรงแรม
 class MainMenuFrame extends JFrame {
     public MainMenuFrame() {
         setTitle("Hotel System");

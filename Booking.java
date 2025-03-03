@@ -1,3 +1,4 @@
+// 1 ควบคุมการเข้าถึงห้องและชั้นของโรงแรม
 class Booking {
     String name;
     int roomNumber;

@@ -1,12 +1,13 @@
-// UserManager.java - คลาสสำหรับจัดการผู้ใช้และบันทึกกิจกรรม
+
 import java.util.ArrayList;
 
+// 4 ระบบบันทึกกิจกรรม Audit trial
 class UserManager {
     static ArrayList<User> users = new ArrayList<>();
     static User currentUser = null;
     static ArrayList<String> activityLog = new ArrayList<>(); // บันทึกกิจกรรม
 
-    // ฟังก์ชันบันทึก Log ทุกครั้งที่เกิดกิจกรรม
+    // 5 นบันทึก Log ทุกครั้งที่เกิดกิจกรรม
     public static void logActivity(String action) {
         activityLog.add(action);
     }
